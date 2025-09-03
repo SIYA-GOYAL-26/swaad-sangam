@@ -1,0 +1,151 @@
+*{
+  margin:0;
+  padding: o;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  background-color:white;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+  
+}
+.logo_image{
+  height: 60px;
+  width: 80px;
+}
+.nav_bar {
+  position: relative;
+  display: flex;
+  min-width:500px ;
+  justify-content:space-between;
+}
+.nav_bar a {
+  margin-left: 90px;
+  display: flex;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #282c3f;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration:none;
+  padding: 28px 0;
+}
+.nav_bar a:hover{
+  border-bottom: 10px solid crimson;
+}
+.nav_bar a sup {
+  color: crimson;
+  font-size: 13px;
+}
+.search_bar {
+  height: 40px;
+  min-width: 130px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-right:5px;
+
+}
+.search_icon {
+  color: black;
+  height: 20px;
+  padding: 10px;
+  box-sizing: content-box;
+  background-color: white;
+  font-weight: 300;
+  border-radius: 4px 0 0 4px;
+  margin-left: 15px;
+
+
+}
+.search_input {
+  background-color: white;
+  flex-grow: 1;
+  color: black;
+  height: 40px;
+  border: 0;
+border-radius: 0 4px 4px 0;
+font-style: oblique;
+}
+.slideshow_container{
+  background-color: gray;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.slideshow_track{
+  display: flex;
+  gap: 0;
+  
+  animation: scroll 20s linear infinite;
+
+}
+.slideshow_track img{
+  width: 100;
+  height: 500px;
+  flex: 0 0 auto;
+  object-fit: cover;
+flex-shrink: 0;}
+@keyframes scroll {
+  0%{ transform: translateX(0);}
+  100%{ transform: translateX(-400%);}
+}
+.slideshow_container:hover .slideshow_track{
+  animation-play-state: paused;
+}
+
+.menu_heading{
+  align-items: center;
+  font-size: 50px;
+  font-style: oblique;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color:pink;
+  height: 130px;
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 30px;
+  
+  
+}
+
+.punjabi_menu {
+  margin: 0px;
+  padding: 0%;
+  position: relative;
+  display: flex;
+  min-width:500px ;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(215, 250, 159);
+  
+  
+
+}
+
+.p_image{
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+height: 250px;
+  width: 250px;
+  border-radius: 50px;
+;
+}
+
+.copyright{
+  color: white;
+  text-align:center;
+  padding: 15px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: gray;
+
+}
